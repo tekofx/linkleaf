@@ -82,6 +82,20 @@ var Theme = createTheme({
 });
 
 /* These atrributes overrides the top attributes*/
+Theme.typography.username = {
+  fontSize: "2.5rem",
+  color: "#fff",
+  paddingBottom: "0.5rem",
+  paddingTop: "0.5rem",
+  textAlign: "center",
+
+  [Theme.breakpoints.up("md")]: {
+    fontSize: "3rem",
+    paddingBottom: "1rem",
+    paddingTop: "1rem",
+  },
+};
+
 Theme.typography.h1 = {
   fontSize: "2.5rem",
   color: "#fff",

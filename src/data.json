@@ -1,1 +1,7 @@
-{ "username": "Teko" }
+{
+  "username": "Teko",
+  "links": [
+    { "name": "Twitter", "icon": "twitter", "link": "https://twitter.com" },
+    { "name": "Instagram", "icon": "insta", "link": "https://instagram.com" }
+  ]
+}
