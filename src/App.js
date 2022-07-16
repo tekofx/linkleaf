@@ -15,8 +15,14 @@ function App() {
     <ThemeProvider theme={theme}>
       <Container>
         <Grid container direction="column" alignItems="center" justify="center">
-          <Avatar src={data.avatar} variant="logo" />
+          <Avatar
+            src={data.avatar}
+            variant="logo"
+            sx={{ width: 200, height: "auto" }}
+          />
           <Typography variant="username">{data.username}</Typography>
+          <Typography variant="description">{data.description}</Typography>
+
           <br />
           {data.links.map((link) => (
             <SocialButton key={link.name} name={link.name} link={link.link} />

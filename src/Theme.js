@@ -95,59 +95,7 @@ Theme.typography.username = {
     paddingTop: "1rem",
   },
 };
-
-Theme.typography.h1 = {
-  fontSize: "2.5rem",
-  color: "#fff",
-  paddingBottom: "0.5rem",
-  paddingTop: "0.5rem",
-
-  [Theme.breakpoints.up("md")]: {
-    fontSize: "3rem",
-    paddingBottom: "1rem",
-    paddingTop: "1rem",
-  },
-};
-
-Theme.typography.h2 = {
-  color: "#fff",
-
-  fontSize: "2rem",
-  paddingBottom: "0.1rem",
-  paddingTop: "0.1rem",
-
-  [Theme.breakpoints.up("md")]: {
-    fontSize: "2.5rem",
-    paddingBottom: "0.2rem",
-    paddingTop: "0.2rem",
-  },
-};
-
-Theme.typography.h3 = {
-  color: "#fff",
-
-  fontSize: "1.5rem",
-
-  [Theme.breakpoints.up("md")]: {
-    fontSize: "2rem",
-    paddingBottom: "0.4rem",
-    paddingTop: "0.4rem",
-  },
-};
-
-Theme.typography.h4 = {
-  color: "#fff",
-
-  fontSize: "1.2rem",
-
-  [Theme.breakpoints.up("md")]: {
-    fontSize: "1.3rem",
-    paddingBottom: "0.0rem",
-    paddingTop: "0.0rem",
-  },
-};
-
-Theme.typography.body1 = {
+Theme.typography.description = {
   color: "#fff",
 
   fontSize: "1rem",
@@ -157,19 +105,6 @@ Theme.typography.body1 = {
   [Theme.breakpoints.up("md")]: {
     fontSize: "1.5rem",
     paddingBottom: "0.4rem",
-  },
-};
-
-Theme.typography.body2 = {
-  color: "#fff",
-
-  fontSize: "0.8rem",
-
-  "@media (min-width:600px)": {
-    fontSize: "0.8rem",
-  },
-  [Theme.breakpoints.up("md")]: {
-    fontSize: "1rem",
   },
 };
 
