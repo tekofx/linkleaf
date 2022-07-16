@@ -83,14 +83,14 @@ var Theme = createTheme({
 
 /* These atrributes overrides the top attributes*/
 Theme.typography.username = {
-  fontSize: "2.5rem",
+  fontSize: "2rem",
   color: "#fff",
   paddingBottom: "0.5rem",
   paddingTop: "0.5rem",
   //textAlign: "center",
 
   [Theme.breakpoints.up("md")]: {
-    fontSize: "3rem",
+    fontSize: "2.5rem",
     paddingBottom: "1rem",
     paddingTop: "1rem",
   },
@@ -98,13 +98,13 @@ Theme.typography.username = {
 Theme.typography.description = {
   color: "#fff",
 
-  fontSize: "1rem",
+  fontSize: "0.5rem",
   textAlign: "justify",
   paddingBottom: "0.2rem",
 
   [Theme.breakpoints.up("md")]: {
-    fontSize: "1.5rem",
-    paddingBottom: "0.4rem",
+    fontSize: "1rem",
+    paddingBottom: "0.1rem",
   },
 };
 
