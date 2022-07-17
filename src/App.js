@@ -1,5 +1,4 @@
 import "./App.css";
-import SocialButton from "./components/Button";
 import {
   Container,
   Typography,
@@ -10,7 +9,6 @@ import {
 import AnimatedCard from "./components/AnimatedButton";
 import data from "./data.json";
 import theme from "./Theme";
-import { Icon } from "@mui/material";
 import { loadCSS } from "fg-loadcss";
 import React from "react";
 
