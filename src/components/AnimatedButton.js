@@ -41,7 +41,7 @@ export default function AnimatedCard(props) {
               justifyContent: "center",
             }}
           >
-            <Icon baseClassName="fab" className={props.icon} />
+            <Icon className={props.icon} />
           </Grid>
           <Grid item xs={8} sm={8} md={8} lg={8}>
             <b>
