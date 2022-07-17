@@ -13,6 +13,12 @@ import { loadCSS } from "fg-loadcss";
 import React from "react";
 import GithubCorner from "react-github-corner";
 function App() {
+  if (data.backgroundColor) {
+    document.body.style.backgroundColor = data.backgroundColor;
+  } else {
+    document.body.style.backgroundImage = "url('/background.jpg')";
+  }
+
   React.useEffect(() => {
     const node = loadCSS(
       "https://use.fontawesome.com/releases/v5.14.0/css/all.css",
