@@ -3,11 +3,40 @@
   "description": "Arctic foxxo from Spain",
   "avatar": "https://avatars3.githubusercontent.com/u/89898?v=3&s=40",
   "links": [
-    { "name": "Twitter", "icon": "fa-twitter", "link": "https://twitter.com" },
+    {
+      "name": "Twitter",
+      "icon": "fa-twitter",
+      "link": "https://twitter.com/teko_fx"
+    },
     {
       "name": "Instagram",
       "icon": "fa-instagram",
-      "link": "https://instagram.com"
+      "link": "https://www.instagram.com/teko_fx/"
+    },
+    {
+      "name": "Mastodon",
+      "icon": "fa-mastodon",
+      "link": "https://meow.social/@teko"
+    },
+    {
+      "name": "Github",
+      "icon": "fa-github",
+      "link": "https://github.com/tekofx"
+    },
+    {
+      "name": "Deviantart",
+      "icon": "fa-deviantart",
+      "link": "https://www.deviantart.com/tekofx"
+    },
+    {
+      "name": "500px",
+      "icon": "fa-500px",
+      "link": "https://500px.com/p/tekofx"
+    },
+    {
+      "name": "Mastodon",
+      "icon": "fa-mastodon",
+      "link": "https://meow.social/@teko"
     }
   ]
 }
