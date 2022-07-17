@@ -12,12 +12,17 @@ import theme from "./Theme";
 import { loadCSS } from "fg-loadcss";
 import React from "react";
 import GithubCorner from "react-github-corner";
+import av from "./avatar.jpg";
 function App() {
+  // Set background
   if (data.backgroundColor) {
     document.body.style.backgroundColor = data.backgroundColor;
   } else {
-    document.body.style.backgroundImage = "url('/background.jpg')";
+    document.body.style.backgroundImage = "url('./background.jpg')";
   }
+
+  // Set title
+  document.title = data.username + " - LinkLeaf";
 
   React.useEffect(() => {
     const node = loadCSS(
@@ -36,7 +41,7 @@ function App() {
       <Container maxWidth="lg">
         <Grid container justify="center">
           <Grid align="center" item xs={12} sm={12} md={12} lg={12} xl={12}>
-            <Avatar src="/avatar.jpg" sx={{ width: 150, height: "auto" }} />
+            <Avatar src={av} sx={{ width: 150, height: "auto" }} />
           </Grid>
           <Grid align="center" xs={12} sm={12} md={12} lg={12} xl={12}>
             <Typography variant="username">{data.username}</Typography>
