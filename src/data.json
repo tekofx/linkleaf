@@ -5,38 +5,43 @@
   "links": [
     {
       "name": "Twitter",
-      "icon": "fa-twitter",
+      "icon": "fab fa-twitter",
       "link": "https://twitter.com/teko_fx"
     },
     {
       "name": "Instagram",
-      "icon": "fa-instagram",
+      "icon": "fab fa-instagram",
       "link": "https://www.instagram.com/teko_fx/"
     },
     {
       "name": "Mastodon",
-      "icon": "fa-mastodon",
+      "icon": "fab fa-mastodon",
       "link": "https://meow.social/@teko"
     },
     {
       "name": "Github",
-      "icon": "fa-github",
+      "icon": "fab fa-github",
       "link": "https://github.com/tekofx"
     },
     {
       "name": "Deviantart",
-      "icon": "fa-deviantart",
+      "icon": "fab fa-deviantart",
       "link": "https://www.deviantart.com/tekofx"
     },
     {
       "name": "500px",
-      "icon": "fa-500px",
+      "icon": "fab fa-500px",
       "link": "https://500px.com/p/tekofx"
     },
     {
       "name": "Mastodon",
-      "icon": "fa-mastodon",
+      "icon": "fab fa-mastodon",
       "link": "https://meow.social/@teko"
+    },
+    {
+      "name": "Furaffinity",
+      "icon": "fa fa-paw",
+      "link": "https://www.furaffinity.net/user/teko."
     }
   ]
 }
