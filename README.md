@@ -6,6 +6,7 @@ A similar project to Linktree that can be hosted on Github Pages
 
 - Fork the repository
 - Edit the `src/data.json` file with your data
+  - The icons are from [Font Awesome](https://fontawesome.com/icons?d=gallery). You can use whatever icon you want.
 - Run `npm install`
 - Edit homepage in `package.json`. It must be as follows: `https://{GITHUB_USERNAME}.github.io/{linkleaf}`
 - Run `npm run deploy`
