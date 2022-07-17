@@ -11,7 +11,7 @@ import data from "./data.json";
 import theme from "./Theme";
 import { loadCSS } from "fg-loadcss";
 import React from "react";
-
+import GithubCorner from "react-github-corner";
 function App() {
   React.useEffect(() => {
     const node = loadCSS(
@@ -26,6 +26,7 @@ function App() {
   }, []);
   return (
     <ThemeProvider theme={theme}>
+      <GithubCorner href="https://github.com/tekofx/linkleaf" target="_blank" />
       <Container maxWidth="lg">
         <Grid container justify="center">
           <Grid align="center" item xs={12} sm={12} md={12} lg={12} xl={12}>
