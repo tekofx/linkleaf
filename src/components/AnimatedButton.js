@@ -53,8 +53,8 @@ export default function AnimatedCard(props) {
             }}
           >
             <Icon
-              baseClassName="fas"
-              className="fa-plus-circle"
+              baseClassName="fab"
+              className={props.icon}
               sx={{ color: "green" }}
             />
           </Grid>

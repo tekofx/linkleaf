@@ -41,7 +41,7 @@ function App() {
           <br />
           {data.links.map((link) => (
             //<SocialButton key={link.name} name={link.name} link={link.link} />
-            <AnimatedCard name={link.name} link={link.link} />
+            <AnimatedCard name={link.name} link={link.link} icon={link.icon} />
           ))}
         </Grid>
       </Container>
