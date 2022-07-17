@@ -20,46 +20,37 @@ export default function AnimatedCard(props) {
   });
 
   return (
-    <AnimatedCard
-      onMouseEnter={() => toggle(!state)}
-      onMouseLeave={() => toggle(!state)}
-      onClick={() => window.open(props.link)}
-      style={styles}
-      sx={{ bgcolor: styles.bgcolor.animation.to, width: "50%", padding: 2 }}
-    >
-      <Grid container spacing={1}>
-        <Grid
-          item
-          xs={2}
-          sm={2}
-          md={2}
-          lg={2}
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <Icon baseClassName="fab" className={props.icon} />
+    <>
+      <AnimatedCard
+        onMouseEnter={() => toggle(!state)}
+        onMouseLeave={() => toggle(!state)}
+        onClick={() => window.open(props.link)}
+        style={styles}
+        sx={{ bgcolor: styles.bgcolor.animation.to, width: "50%", padding: 2 }}
+      >
+        <Grid container spacing={6}>
+          <Grid
+            item
+            xs={2}
+            sm={2}
+            md={2}
+            lg={2}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
+            <Icon baseClassName="fab" className={props.icon} />
+          </Grid>
+          <Grid item xs={8} sm={8} md={8} lg={8}>
+            <b>
+              <p style={{ padding: 0, margin: 0 }}>{props.name}</p>
+            </b>
+          </Grid>
         </Grid>
-        <Grid item xs={8} sm={8} md={8} lg={8}>
-          <b>
-            <p style={{ padding: 0, margin: 0 }}>{props.name}</p>
-          </b>
-        </Grid>
-        <Grid
-          item
-          xs={2}
-          sm={2}
-          md={2}
-          lg={2}
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        ></Grid>
-      </Grid>
-    </AnimatedCard>
+      </AnimatedCard>
+      <br />
+    </>
   );
 }
