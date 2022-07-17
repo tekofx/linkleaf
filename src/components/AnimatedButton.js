@@ -26,7 +26,11 @@ export default function AnimatedCard(props) {
         onMouseLeave={() => toggle(!state)}
         onClick={() => window.open(props.link)}
         style={styles}
-        sx={{ bgcolor: styles.bgcolor.animation.to, width: "50%", padding: 2 }}
+        sx={{
+          bgcolor: styles.bgcolor.animation.to,
+          padding: 2,
+          width: "70%",
+        }}
       >
         <Grid container spacing={6}>
           <Grid
