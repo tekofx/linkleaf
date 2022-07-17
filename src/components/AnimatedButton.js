@@ -1,17 +1,6 @@
 import { useSpring, animated } from "react-spring";
 import { useState } from "react";
-import {
-  Card,
-  CardContent,
-  ThemeProvider,
-  Button,
-  Icon,
-  IconButton,
-  Grid,
-  Typography,
-  SvgIcon,
-} from "@mui/material";
-import { Fa500Px, FaInstagram } from "react-icons/fa";
+import { Card, Icon, Grid } from "@mui/material";
 
 import Theme from "../Theme";
 
@@ -31,52 +20,46 @@ export default function AnimatedCard(props) {
   });
 
   return (
-    <ThemeProvider theme={Theme}>
-      <AnimatedCard
-        onMouseEnter={() => toggle(!state)}
-        onMouseLeave={() => toggle(!state)}
-        onClick={() => window.open(props.link)}
-        style={styles}
-        sx={{ bgcolor: styles.bgcolor.animation.to, width: "50%", padding: 2 }}
-      >
-        <Grid container spacing={1}>
-          <Grid
-            item
-            xs={2}
-            sm={2}
-            md={2}
-            lg={2}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
-          >
-            <Icon
-              baseClassName="fab"
-              className={props.icon}
-              sx={{ color: "green" }}
-            />
-          </Grid>
-          <Grid item xs={8} sm={8} md={8} lg={8}>
-            <b>
-              <p style={{ padding: 0, margin: 0 }}>{props.name}</p>
-            </b>
-          </Grid>
-          <Grid
-            item
-            xs={2}
-            sm={2}
-            md={2}
-            lg={2}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
-          ></Grid>
+    <AnimatedCard
+      onMouseEnter={() => toggle(!state)}
+      onMouseLeave={() => toggle(!state)}
+      onClick={() => window.open(props.link)}
+      style={styles}
+      sx={{ bgcolor: styles.bgcolor.animation.to, width: "50%", padding: 2 }}
+    >
+      <Grid container spacing={1}>
+        <Grid
+          item
+          xs={2}
+          sm={2}
+          md={2}
+          lg={2}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          <Icon baseClassName="fab" className={props.icon} />
         </Grid>
-      </AnimatedCard>
-    </ThemeProvider>
+        <Grid item xs={8} sm={8} md={8} lg={8}>
+          <b>
+            <p style={{ padding: 0, margin: 0 }}>{props.name}</p>
+          </b>
+        </Grid>
+        <Grid
+          item
+          xs={2}
+          sm={2}
+          md={2}
+          lg={2}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        ></Grid>
+      </Grid>
+    </AnimatedCard>
   );
 }
