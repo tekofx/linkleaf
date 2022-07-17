@@ -29,7 +29,7 @@ function App() {
       <Container maxWidth="lg">
         <Grid container justify="center">
           <Grid align="center" item xs={12} sm={12} md={12} lg={12} xl={12}>
-            <Avatar src={data.avatar} sx={{ width: 150, height: "auto" }} />
+            <Avatar src="/avatar.jpeg" sx={{ width: 150, height: "auto" }} />
           </Grid>
           <Grid align="center" xs={12} sm={12} md={12} lg={12} xl={12}>
             <Typography variant="username">{data.username}</Typography>
