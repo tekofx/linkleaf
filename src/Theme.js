@@ -98,7 +98,7 @@ Theme.typography.username = {
 Theme.typography.description = {
   color: "#fff",
 
-  fontSize: "0.5rem",
+  fontSize: "1rem",
   textAlign: "justify",
   paddingBottom: "0.2rem",
 
