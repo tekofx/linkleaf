@@ -38,6 +38,11 @@
       "name": "Furaffinity",
       "icon": "fa fa-paw",
       "link": "https://www.furaffinity.net/user/teko."
+    },
+    {
+      "name": "Tumblr",
+      "icon": "fab fa-tumblr",
+      "link": "https://tekofx.tumblr.com/"
     }
   ]
 }
