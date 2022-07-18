@@ -46,11 +46,21 @@ function App() {
           <Grid align="center" xs={12} sm={12} md={12} lg={12} xl={12}>
             <Typography variant="username">{data.username}</Typography>
           </Grid>
-          <Grid align="center" xs={12} sm={12} md={12} lg={12} xl={12}>
+          <Grid
+            align="center"
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            xl={12}
+            sx={{ marginBottom: 2 }}
+          >
             <Typography variant="description">{data.description}</Typography>
           </Grid>
+          <Grid>
+            <br />
+          </Grid>
 
-          <br />
           {data.links.map((link) => (
             <Grid align="center" xs={12} sm={6} md={6} lg={4}>
               <AnimatedCard
