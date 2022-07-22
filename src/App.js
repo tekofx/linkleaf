@@ -81,8 +81,12 @@ function App() {
               justifyContent: "center",
             }}
           >
-            <LinkIcon sx={{}} />
-            <Typography variant="web">{data.web}</Typography>
+            <a href={data.web}>
+              <LinkIcon />
+            </a>
+            <a href={data.web}>
+              <Typography variant="web">{data.web}</Typography>
+            </a>
           </Grid>
           <Grid>
             <br />
