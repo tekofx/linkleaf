@@ -44,7 +44,15 @@ function App() {
           <Grid align="center" item xs={12} sm={12} md={12} lg={12} xl={12}>
             <Avatar src={av} sx={{ width: 150, height: "auto" }} />
           </Grid>
-          <Grid align="center" xs={12} sm={12} md={12} lg={12} xl={12}>
+          <Grid
+            align="center"
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            xl={12}
+            sx={{ marginBottom: 1 }}
+          >
             <Typography variant="username">{data.username}</Typography>
           </Grid>
           <Grid
@@ -54,7 +62,7 @@ function App() {
             md={12}
             lg={12}
             xl={12}
-            sx={{ marginBottom: 2 }}
+            sx={{ marginBottom: 1 }}
           >
             <Typography variant="description">{data.description}</Typography>
           </Grid>
