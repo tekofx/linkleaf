@@ -34,36 +34,10 @@ var Theme = createTheme({
         },
       ],
     },
-    MuiAppBar: {
-      styleOverrides: {
-        // Name of the slot
-        root: {
-          // Some CSS
-          background: "#161b22",
-        },
-      },
-    },
-    MuiSkeleton: {
+    MuiSvgIcon: {
       styleOverrides: {
         root: {
-          backgroundColor: "#383838",
-        },
-      },
-    },
-    MuiCardContent: {
-      styleOverrides: {
-        root: {
-          paddingBottom: "0px",
-        },
-      },
-    },
-    MuiTab: {
-      styleOverrides: {
-        root: {
-          color: "white",
-          fontWeight: "bold",
-          fontSize: "1.2rem",
-          textTransform: "none",
+          color: "#fff",
         },
       },
     },
@@ -105,6 +79,17 @@ Theme.typography.description = {
   [Theme.breakpoints.up("md")]: {
     fontSize: "1rem",
     paddingBottom: "0.1rem",
+  },
+};
+Theme.typography.web = {
+  color: "#fff",
+
+  fontStyle: "italic",
+  fontSize: "1rem",
+  textAlign: "justify",
+
+  [Theme.breakpoints.up("md")]: {
+    fontSize: "1rem",
   },
 };
 

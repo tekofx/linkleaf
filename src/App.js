@@ -12,6 +12,7 @@ import theme from "./Theme";
 import { loadCSS } from "fg-loadcss";
 import React from "react";
 import GithubCorner from "react-github-corner";
+import LinkIcon from "@mui/icons-material/Link";
 import av from "./avatar.jpg";
 function App() {
   // Set background
@@ -56,6 +57,24 @@ function App() {
             sx={{ marginBottom: 2 }}
           >
             <Typography variant="description">{data.description}</Typography>
+          </Grid>
+
+          <Grid
+            align="center"
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            xl={12}
+            sx={{
+              marginBottom: 2,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <LinkIcon sx={{}} />
+            <Typography variant="web">{data.web}</Typography>
           </Grid>
           <Grid>
             <br />
