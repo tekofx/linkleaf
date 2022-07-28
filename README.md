@@ -13,6 +13,7 @@ A similar project to Linktree that can be hosted on Github Pages
 # How to get it ready
 
 - Fork the repository
+- Enable Github Actions on your repo
 - Edit the `src/data.json` file with your data and push it to your repo
   - The icons are from [Font Awesome](https://fontawesome.com/icons?d=gallery). You can use whatever icon you want.
 - Enable github pages in the settings of your repo. Go to Setting>Pages and set source: Deploy from branch and select `gh-pages` brach
