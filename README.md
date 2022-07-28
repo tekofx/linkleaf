@@ -10,17 +10,15 @@ A similar project to Linktree that can be hosted on Github Pages
 
 [Demo](https://tekofx.github.io/linkleaf)
 
-# How to
+# How to get it ready
 
 - Fork the repository
-- Edit the `src/data.json` file with your data
+- Edit the `src/data.json` file with your data and push it to your repo
   - The icons are from [Font Awesome](https://fontawesome.com/icons?d=gallery). You can use whatever icon you want.
-- Run `npm install`
-- Edit homepage in `package.json`. It must be as follows: `https://{GITHUB_USERNAME}.github.io/{linkleaf}`
-- Run `git push` to push to the repo and publish on github pages
-
-Optional:
-You can publish it with `npm run deploy`, but the repo has already a Github Action to publish on push
+- Enable github pages in the settings of your repo. Go to Setting>Pages and set source: Deploy from branch and select `gh-pages` brach
+    <img  src="./assets/pages.png"  >
+  
+- Now your LinkLeaf should be located on `https://{GITHUB_USERNAME}.github.io/linkleaf`
 
 # Customization
 
