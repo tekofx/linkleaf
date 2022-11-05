@@ -44,6 +44,11 @@
       "name": "Tumblr",
       "icon": "fab fa-tumblr",
       "link": "https://tekofx.tumblr.com/"
+    },
+    {
+      "name": "Telegram Art Channel",
+      "icon": "fab fa-telegram",
+      "link": "https://t.me/tekoartgallery"
     }
   ]
 }
