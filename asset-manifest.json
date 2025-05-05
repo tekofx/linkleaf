@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/linkleaf/static/css/main.073c9b0a.css",
+    "main.js": "/linkleaf/static/js/main.4a672724.js",
+    "static/js/787.7d89f0ad.chunk.js": "/linkleaf/static/js/787.7d89f0ad.chunk.js",
+    "static/media/avatar.jpg": "/linkleaf/static/media/avatar.a59208a0c3db41d2691d.jpg",
+    "index.html": "/linkleaf/index.html",
+    "main.073c9b0a.css.map": "/linkleaf/static/css/main.073c9b0a.css.map",
+    "main.4a672724.js.map": "/linkleaf/static/js/main.4a672724.js.map",
+    "787.7d89f0ad.chunk.js.map": "/linkleaf/static/js/787.7d89f0ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.4a672724.js"
+  ]
+}
