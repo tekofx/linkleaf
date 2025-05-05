@@ -10,11 +10,6 @@
       "link": "https://twitter.com/teko_fx"
     },
     {
-      "name": "Instagram",
-      "icon": "fab fa-instagram",
-      "link": "https://www.instagram.com/teko_fx/"
-    },
-    {
       "name": "Mastodon",
       "icon": "fab fa-mastodon",
       "link": "https://meow.social/@teko"
@@ -25,30 +20,14 @@
       "link": "https://github.com/tekofx"
     },
     {
-      "name": "Deviantart",
-      "icon": "fab fa-deviantart",
-      "link": "https://www.deviantart.com/tekofx"
-    },
-    {
       "name": "500px",
       "icon": "fab fa-500px",
       "link": "https://500px.com/p/tekofx"
     },
-
     {
       "name": "Furaffinity",
       "icon": "fa fa-paw",
       "link": "https://www.furaffinity.net/user/teko."
     },
-    {
-      "name": "Tumblr",
-      "icon": "fab fa-tumblr",
-      "link": "https://tekofx.tumblr.com/"
-    },
-    {
-      "name": "Telegram Art Channel",
-      "icon": "fab fa-telegram",
-      "link": "https://t.me/tekoartgallery"
-    }
   ]
 }
