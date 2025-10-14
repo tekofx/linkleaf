@@ -44,7 +44,8 @@ export default function AnimatedButton({
             alignItems: "center",
           }}
         >
-          <FontAwesomeIcon icon={icon.split(" ")} style={{ fontSize: "2em" }} />
+          {/*@ts-expect-error: It accepts string but lints anyway*/}
+          <FontAwesomeIcon icon={icon} style={{ fontSize: "2em" }} />
           <b>
             <p style={{ padding: 0, margin: 0 }}>{name}</p>
           </b>
