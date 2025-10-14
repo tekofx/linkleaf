@@ -1,5 +1,5 @@
 import "./App.css";
-import av from "./avatar.jpg";
+import av from "/avatar.jpg";
 import {
   Container,
   Typography,
@@ -29,12 +29,16 @@ function App() {
           <Typography variant="username">{data.username}</Typography>
           <Typography variant="description">{data.description}</Typography>
 
-          <a href={data.web}>
-            <LinkIcon />
-          </a>
-          <a href={data.web}>
-            <Typography variant="web">{data.web}</Typography>
-          </a>
+          {data.web && (
+            <>
+              <a href={data.web}>
+                <LinkIcon />
+              </a>
+              <a href={data.web}>
+                <Typography variant="web">{data.web}</Typography>
+              </a>
+            </>
+          )}
           <Grid container spacing={2}>
             {data.links.map((link) => (
               <Grid
