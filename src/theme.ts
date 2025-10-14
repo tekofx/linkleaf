@@ -2,7 +2,6 @@ import { createTheme } from "@mui/material/styles";
 
 const Theme = createTheme({
   palette: {
-    type: "dark",
     primary: {
       main: "#0099b2",
     },
@@ -10,7 +9,6 @@ const Theme = createTheme({
       main: "#edf069",
     },
     background: {
-      main: "#101010",
       paper: "#28272a",
     },
     error: {
@@ -24,7 +22,7 @@ const Theme = createTheme({
     MuiAvatar: {
       variants: [
         {
-          props: { variant: "logo" },
+          props: { variant: "circular" },
           style: {
             width: "10%",
             height: "auto",
