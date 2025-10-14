@@ -10,9 +10,9 @@
       "link": "https://twitter.com/teko_fx"
     },
     {
-      "name": "Mastodon",
-      "icon": "fab fa-mastodon",
-      "link": "https://meow.social/@teko"
+      "name": "Bluesky",
+      "icon": "fab fa-bluesky",
+      "link": "https://bsky.app/profile/tekofx.es"
     },
     {
       "name": "Github",
@@ -23,11 +23,6 @@
       "name": "500px",
       "icon": "fab fa-500px",
       "link": "https://500px.com/p/tekofx"
-    },
-    {
-      "name": "Furaffinity",
-      "icon": "fa fa-paw",
-      "link": "https://www.furaffinity.net/user/teko."
     }
   ]
 }
