@@ -1,6 +1,6 @@
 import { useSpring, animated } from "react-spring";
 import { useState } from "react";
-import { Card, Icon, Grid } from "@mui/material";
+import { Card, Icon, Grid, Stack } from "@mui/material";
 
 import Theme from "../theme";
 
@@ -37,32 +37,17 @@ export default function AnimatedButton({
         onClick={() => window.open(link)}
         style={styles}
         sx={{
-          bgcolor: styles.bgcolor.animation.to,
+          backgroundColor: styles.bgcolor.animation.to,
           padding: 2,
           width: "70%",
         }}
       >
-        <Grid container spacing={6}>
-          <Grid
-            item
-            xs={2}
-            sm={2}
-            md={2}
-            lg={2}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
-          >
-            <Icon className={icon} />
-          </Grid>
-          <Grid item xs={8} sm={8} md={8} lg={8}>
-            <b>
-              <p style={{ padding: 0, margin: 0 }}>{name}</p>
-            </b>
-          </Grid>
-        </Grid>
+        <Stack direction={"row"}>
+          <Icon className={icon} />
+          <b>
+            <p style={{ padding: 0, margin: 0 }}>{name}</p>
+          </b>
+        </Stack>
       </AnimatedCard>
       <br />
     </>
