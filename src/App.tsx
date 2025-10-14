@@ -1,4 +1,3 @@
-import "./App.css";
 import av from "/avatar.jpg";
 import {
   Container,
@@ -7,6 +6,7 @@ import {
   Grid,
   Avatar,
   Stack,
+  CssBaseline,
 } from "@mui/material";
 import data from "./data.json";
 import GithubCorner from "react-github-corner";
@@ -17,8 +17,9 @@ import AnimatedButton from "./components/AnimatedButton";
 function App() {
   return (
     <ThemeProvider theme={Theme}>
+      <CssBaseline />
       <GithubCorner href="https://github.com/tekofx/linkleaf" target="_blank" />
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" sx={{ padding: "2rem" }}>
         <Stack
           sx={{
             justifyContent: "center",

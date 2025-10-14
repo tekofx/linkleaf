@@ -34,7 +34,7 @@ export default function AnimatedButton({
         style={props}
         sx={{
           padding: 2,
-          width: "70%",
+          width: "100%",
         }}
       >
         <Stack
