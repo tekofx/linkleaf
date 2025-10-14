@@ -9,12 +9,11 @@ import {
   Stack,
 } from "@mui/material";
 import data from "./data.json";
-import { useEffect } from "react";
-import { loadCSS } from "fg-loadcss";
 import GithubCorner from "react-github-corner";
 import LinkIcon from "@mui/icons-material/Link";
 import Theme from "./theme";
 import AnimatedButton from "./components/AnimatedButton";
+
 function App() {
   return (
     <ThemeProvider theme={Theme}>
@@ -39,7 +38,11 @@ function App() {
         </Stack>
         <Grid container>
           {data.links.map((link) => (
-            <Grid alignSelf="center" size={{ xs: 12, sm: 6, md: 6, lg: 4 }}>
+            <Grid
+              justifyContent="center"
+              alignItems={"center"}
+              size={{ xs: 12, sm: 6, md: 6, lg: 4 }}
+            >
               <AnimatedButton
                 name={link.name}
                 link={link.link}

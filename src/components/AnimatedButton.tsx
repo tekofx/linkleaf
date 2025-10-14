@@ -1,7 +1,7 @@
 import { useSpring, animated } from "react-spring";
 import { useState } from "react";
-import { Card, Icon, Grid, Stack } from "@mui/material";
-
+import { Card, Stack } from "@mui/material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Theme from "../theme";
 
 interface AnimatedButtonProps {
@@ -15,35 +15,35 @@ export default function AnimatedButton({
   link,
   icon,
 }: AnimatedButtonProps) {
-  const [state, toggle] = useState(true);
+  const [hovered, setHovered] = useState(true);
   const AnimatedCard = animated(Card);
 
-  const styles = useSpring({
-    loop: false,
-    from: { scale: 1, color: "white", bgcolor: Theme.palette.background.paper },
-    to: {
-      scale: state ? 1 : 1.05,
-      color: state ? "white" : "black",
-      bgcolor: state ? "white" : Theme.palette.background.paper,
-    },
+  const props = useSpring({
+    scale: hovered ? 1 : 1.05,
+    backgroundColor: hovered ? Theme.palette.background.paper : "white",
     config: { duration: 200 },
+    color: hovered ? "white" : "black",
   });
 
   return (
     <>
       <AnimatedCard
-        onMouseEnter={() => toggle(!state)}
-        onMouseLeave={() => toggle(!state)}
+        onMouseEnter={() => setHovered(!hovered)}
+        onMouseLeave={() => setHovered(!hovered)}
         onClick={() => window.open(link)}
-        style={styles}
+        style={props}
         sx={{
-          backgroundColor: styles.bgcolor.animation.to,
           padding: 2,
           width: "70%",
         }}
       >
-        <Stack direction={"row"}>
-          <Icon className={icon} />
+        <Stack
+          direction={"row"}
+          sx={{
+            alignItems: "center",
+          }}
+        >
+          <FontAwesomeIcon icon={icon.split(" ")} />
           <b>
             <p style={{ padding: 0, margin: 0 }}>{name}</p>
           </b>
