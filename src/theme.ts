@@ -19,19 +19,6 @@ const Theme = createTheme({
     },
   },
   components: {
-    MuiAvatar: {
-      variants: [
-        {
-          props: { variant: "circular" },
-          style: {
-            width: "10%",
-            height: "auto",
-            maxWidth: "10%",
-            maxHeight: "10%",
-          },
-        },
-      ],
-    },
     MuiSvgIcon: {
       styleOverrides: {
         root: {
