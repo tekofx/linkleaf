@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material/styles";
 
-var Theme = createTheme({
+const Theme = createTheme({
   palette: {
     type: "dark",
     primary: {
@@ -45,12 +45,24 @@ var Theme = createTheme({
   typography: {
     fontFamily: ['"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial"].join(","),
 
-    appBar: {
-      fontSize: "1.5rem",
-      fontWeight: "bold",
+    username: {
+      fontSize: "2rem",
       color: "#fff",
+      paddingBottom: "0.5rem",
+      paddingTop: "0.5rem",
+    },
+    description: {
+      color: "#fff",
+      fontSize: "1rem",
+      textAlign: "justify",
+      paddingBottom: "0.2rem",
+    },
+    web: {
+      color: "#fff",
+
       fontStyle: "italic",
-      textDecoration: "none",
+      fontSize: "1rem",
+      textAlign: "justify",
     },
   },
 });
@@ -95,4 +107,28 @@ Theme.typography.web = {
 
 //Theme = responsiveFontSizes(Theme);
 
+declare module "@mui/material/styles" {
+  interface TypographyVariants {
+    username: React.CSSProperties;
+    description: React.CSSProperties;
+    web: React.CSSProperties;
+  }
+
+  // allow configuration using `createTheme()`
+  interface TypographyVariantsOptions {
+    username?: React.CSSProperties;
+    description: React.CSSProperties;
+    web: React.CSSProperties;
+  }
+}
+
+// Update the Typography's variant prop options
+declare module "@mui/material/Typography" {
+  interface TypographyPropsVariantOverrides {
+    username: true;
+    description: true;
+    web: true;
+    h3: false;
+  }
+}
 export default Theme;
