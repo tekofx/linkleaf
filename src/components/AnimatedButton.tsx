@@ -38,12 +38,13 @@ export default function AnimatedButton({
         }}
       >
         <Stack
+          spacing={2}
           direction={"row"}
           sx={{
             alignItems: "center",
           }}
         >
-          <FontAwesomeIcon icon={icon.split(" ")} />
+          <FontAwesomeIcon icon={icon.split(" ")} style={{ fontSize: "2em" }} />
           <b>
             <p style={{ padding: 0, margin: 0 }}>{name}</p>
           </b>

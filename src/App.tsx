@@ -35,22 +35,23 @@ function App() {
           <a href={data.web}>
             <Typography variant="web">{data.web}</Typography>
           </a>
+          <Grid container spacing={2}>
+            {data.links.map((link) => (
+              <Grid
+                display={"flex"}
+                justifyContent="center"
+                alignItems={"center"}
+                size={{ xs: 12, sm: 6, md: 6, lg: 4 }}
+              >
+                <AnimatedButton
+                  name={link.name}
+                  link={link.link}
+                  icon={link.icon}
+                />
+              </Grid>
+            ))}
+          </Grid>
         </Stack>
-        <Grid container>
-          {data.links.map((link) => (
-            <Grid
-              justifyContent="center"
-              alignItems={"center"}
-              size={{ xs: 12, sm: 6, md: 6, lg: 4 }}
-            >
-              <AnimatedButton
-                name={link.name}
-                link={link.link}
-                icon={link.icon}
-              />
-            </Grid>
-          ))}
-        </Grid>
       </Container>
     </ThemeProvider>
   );
